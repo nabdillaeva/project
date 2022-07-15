@@ -1,0 +1,38 @@
+{
+  "catalogName": "Laptop",
+  "subCatalogList": [
+    {
+      "subCatalogName": "Apple",
+      "simpleCharacterTemplates": [
+        {
+          "type": "DATE",
+          "title": "date",
+          "description": "write created date here"
+        },
+        {
+          "type": "INT_VALUE",
+          "title": "weight",
+          "description": "write weight here"
+        }
+      ],
+      "imageCharacterTemplates": [
+        {
+          "type": "IMAGE",
+          "title": "image",
+          "description": "put images",
+          "imageCount": 8
+        }
+      ],
+      "intDropDownCharacterTemplates": [
+        {
+          "type": "INT_DROP_DOWN",
+          "title": "memory",
+          "description": "write memory",
+          "values": [
+            128, 256, 512, 1024
+          ]
+        }
+      ]
+    }
+  ]
+}
