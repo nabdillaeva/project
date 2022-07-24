@@ -4,6 +4,7 @@ import gadgetarium.dto.request.characteristic.save.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,16 @@ import java.util.List;
 public class ProductRequest {
 
     private String productName;
+
+    private String brandImage;
+
+    private int guarantee;
+
+    private Long article;
+
+    private BigDecimal price;
+
+    private int count;
 
     private List<SaveTextCharacterRequest> textCharacterRequests = new ArrayList<>();
     private List<SaveIntegerCharacterRequest> integerCharacterRequests = new ArrayList<>();

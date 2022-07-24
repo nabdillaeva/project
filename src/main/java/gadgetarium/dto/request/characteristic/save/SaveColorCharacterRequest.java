@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class SaveColorCharacterRequest extends SaveCharacterRequest{
+
     private List<String> colors;
 
     public SaveColorCharacterRequest(Long templateId, List<String> colors) {

@@ -2,11 +2,13 @@ package gadgetarium.dto.request;
 
 import gadgetarium.dto.request.characteristic.template.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
 
 @Getter @Setter
+@NoArgsConstructor
 public class SaveSubCatalogRequest {
 
     private String subCatalogName;

@@ -21,7 +21,7 @@ public class Catalog {
 
     private String name;
 
-    @OneToMany(mappedBy = "catalog", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "catalog", cascade = CascadeType.PERSIST, orphanRemoval = true)
     private List<SubCatalog> subCatalogs;
 
     public Catalog(SaveCatalogRequest newCatalog) {

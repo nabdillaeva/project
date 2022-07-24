@@ -22,6 +22,7 @@ public class Character {
 
     private String title;
 
+    @Enumerated(EnumType.STRING)
     private InputType type;
 
     private String textValue;

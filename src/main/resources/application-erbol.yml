@@ -2,9 +2,9 @@ server:
     port: 5050
 spring:
     datasource:
-        password: annembenim
-        url: jdbc:postgresql://localhost:5432/postgres
-        username: postgres
+#        password: annembenim
+        url: jdbc:postgresql://localhost:1111/postgres
+#        username: postgres
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQL10Dialect
         hibernate:

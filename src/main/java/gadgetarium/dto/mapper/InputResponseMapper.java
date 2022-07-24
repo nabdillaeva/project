@@ -3,9 +3,6 @@ package gadgetarium.dto.mapper;
 import gadgetarium.dto.response.inputresponses.*;
 import gadgetarium.models.CharacterTemplate;
 
-
-
-
 public class InputResponseMapper {
 
     public static InputResponse mapToInputResponse(CharacterTemplate ct) {

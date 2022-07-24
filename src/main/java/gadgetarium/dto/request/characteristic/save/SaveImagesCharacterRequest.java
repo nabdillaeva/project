@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class SaveImagesCharacterRequest extends SaveCharacterRequest{
+
     private List<String> images;
 
     public SaveImagesCharacterRequest(Long templateId, List<String> images) {

@@ -46,4 +46,7 @@ public class User {
 
     @OneToOne(mappedBy = "user")
     private OrderHistory orderHistory;
+
+    @OneToOne
+    private Rating rating;
 }

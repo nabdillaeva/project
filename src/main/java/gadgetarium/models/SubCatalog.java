@@ -3,9 +3,11 @@ package gadgetarium.models;
 import gadgetarium.dto.mapper.CharacterTemplateMapper;
 import gadgetarium.dto.request.SaveSubCatalogRequest;
 import gadgetarium.dto.request.characteristic.template.CharacterTemplateRequest;
+import gadgetarium.dto.response.GetSubCatalogResponse;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,6 +18,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class SubCatalog {
 
     @Id
@@ -45,4 +48,6 @@ public class SubCatalog {
 
         this.products = new ArrayList<>();
     }
+
+
 }

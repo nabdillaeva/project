@@ -1,13 +1,12 @@
 package gadgetarium.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import gadgetarium.enums.ProductInStock;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -20,18 +19,23 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
-    private Long artikul;
+    private String brandImage;
 
-    private int count;
-
-    private LocalDate createdAt;
+    private int guarantee;
 
     private int discount;
 
-    @Enumerated(EnumType.STRING)
-    private ProductInStock status;
+    private Long article;
+
+    private BigDecimal price;
+
+    private int count;
+
+    private Boolean status;
+
 
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<Character> characters;
@@ -51,4 +55,8 @@ public class Product {
     @ManyToOne
     @JsonIgnore
     private OrderHistory orderHistory;
+
+    @OneToMany(mappedBy = "product")
+    @JsonIgnore
+    private List<Rating> rating;
 }
